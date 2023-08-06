@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Products</h1>
+    <hr>
+    <h2>List All</h2>
+    <div>
+        <form action="/api/products" method="get">
+            <button type="submit" class="btn btn-primary">List Products</button>
+        </form>
+    </div>
+    <hr>
+    <h2>Add Product</h2>
+    <div>
+        <form action="/api/products" method="post">
+            <div class="mb-3">
+                <label for="productTitle" class="form-label">Title</label>
+                <input type="text" name="productTitle" id="productTitle">
+            </div>
+            <div class="mb-3">
+                <label for="productDescription" class="form-label">Description</label>
+                <input type="text" name="productDescription" id="productDescription">
+            </div>
+            <div class="mb-3">
+                <label for="productCode">Code</label>
+                <input type="text" name="productCode" id="productCode">
+            </div>
+            <div class="mb-3">
+                <label for="productPrice">Price</label>
+                <input type="text" name="productPrice" id="productPrice">
+            </div>
+            <div class="mb-3">
+                <label for="productStatus">Status</label>
+                <input type="text" name="productStatus" id="productStatus">
+            </div>
+            <div class="mb-3">
+                <label for="productStock">Stock</label>
+                <input type="text" name="productStock" id="productStock">
+            </div>
+            <div class="mb-3">
+                <label for="productCategory">Category</label>
+                <input type="text" name="productCategory" id="productCategory">
+            </div>
+            <div class="mb-3">
+                <label for="productThumbnails">Thumbnails</label>
+                <input type="text" name="productThumbnails" id="productThumbnails">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
